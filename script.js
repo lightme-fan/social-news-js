@@ -1,31 +1,21 @@
 // write your code here
 console.log('it works!');
 
-const socialProgram = [
-    {
-      title: "Confidence",
-      link: '"http://confidence.com"',
-      author: "Jonshon"
-    },
-    
-    {
-      title: "Motivation",
-      link: '"https://www.motivation.com"',
-      author: "Ariane"
-    },
-    
-    {
-      title: "Diligence",
-      link: '"http://diligence.org"',
-      author: "Sonia"
-    }
-];
+class listOfLinks {
+    constructor(title, link, author) {    
+      this.title = title;
+      this.link = link;
+      this.author = author;
   
-const menuChoices = () => {
-    for(let i=0; i<socialProgram.length; i++) {
-       let firstChoice = `${socialProgram[i].title} \n ${socialProgram[i].link} \n ${socialProgram[i].author}`;
-       alert(firstChoice)
+    let linkStartWith = url;
+    console.log(linkStartWith.startsWith("http://"));
+    console.log(linkStartWith.startsWith("https://")); 
     }
+
+    describe() {
+      let linkDescription = `${this.title} (${this.url}). Author: ${this.author}`;
+      return linkDescription;
+    }   
 }
 
 const listOfChoices = `Choose an option:
@@ -34,14 +24,5 @@ const listOfChoices = `Choose an option:
 3: Remove link
 0: Quit
 `;
-    
+      
 let choice = Number(prompt(listOfChoices));
-
-while (choice !== 0) {
-  if (choice == 1) {
-      menuChoices()
-  }
-
-//   else if (choice == 2) {}
-
-}
