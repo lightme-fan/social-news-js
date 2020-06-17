@@ -26,3 +26,22 @@ const listOfChoices = `Choose an option:
 `;
       
 let choice = Number(prompt(listOfChoices));
+
+while (choice !== 0) {
+  	if (choice === 1) {
+        alert("List of existing links");
+    }
+  	else if (choice === 2) {
+  			alert("Adding a link");
+    }
+  	else if (choice === 3) {
+  			alert("Removing a link")
+    }
+  	else {
+  			alert("Please enter a correct choice. (1,2,3,0)");
+  	}
+  	choice = Number(prompt(listOfChoices));
+  }
+  // here, this is the end of the program. It's the last instruction.
+  alert("Thank you for entering links");
+  
