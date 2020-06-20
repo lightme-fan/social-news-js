@@ -34,7 +34,7 @@ const listLinks = () => {
 // adding a new link
 const addingNewLink = () => {
   let newTitle = prompt("Enter a title");
-  let newUrl = prompt('Enter is a URL');
+  let newUrl = prompt('Enter an URL');
   let newAuthor = prompt('Who is the author');
   
   // If a new link URL does not start with "http://" or "https://", "http://" is automatically added to its beginning.
